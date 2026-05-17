@@ -1,6 +1,7 @@
+
 import java.util.*;
 
-public class StrReverse{
+class StrReverse{
     public static void main(String args[]){
 
         Scanner obj = new Scanner(System.in);
@@ -14,5 +15,15 @@ public class StrReverse{
         }
 
         System.out.println("Reversed string: " + rev);
+
+        System.out.println("Checking "+ rev +" is Palindrome or Not: ");
+
+        System.out.println();
+        
+        if(str.equalsIgnoreCase(rev)){
+            System.out.println("Yes it is Palindrome String");
+        } else{
+            System.out.println("Not a Palindrome String");
+        }
     }
 }
